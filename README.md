@@ -2,8 +2,22 @@
 
 ## Design flow
 ![image](https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/fd3ff425-95fb-4302-a440-0fee36630a63)
+## Simulation results
+  - **IQ Imbalance and NCO**
+  <img src="https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/8da88a78-6858-464e-9480-77c0750e70db" width="80%">
+      
+  - **Lo Phase Noise**
+  <img src="https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/0a84a596-5d1d-4bcd-9fcd-0cf13cffd758" width="80%"> 
 
-
+  - **IQ Imbalance of Level Offset**
+  <img src="https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/7c4e1a72-cee7-4194-8de6-01b4b7935581" width="80%"> 
+  
+  - **Mixer's Flatness**
+  <img src="https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/1d4f9409-cb07-4726-8532-2364699ac4f5" width="80%"> 
+  
+  - **Leakage of Lo vs Mixer**
+  <img src="https://github.com/kaycelin/0302_RF_Lo_Mixer_QEC/assets/87049112/05dd9580-5df5-41bf-befe-4c45011b0481" width="80%"> 
+  
 ## Main: Mixer_Lo_main_k0510.m
   - **Lo and Phase Noise**
     - Lo parameters and settings
