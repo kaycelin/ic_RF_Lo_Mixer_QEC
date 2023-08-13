@@ -1,6 +1,7 @@
 ## 2023-08-12, Example of evm comparsion between TM1.1 and TM3.1 
 **Waveform: 100MHz scs:30kHz sampleRate:983.04MHz**
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/f97b7934-a55a-438c-beb2-f280c9583e77)
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/e2fa3b33-c53a-464b-af4c-7a358811c378)
+
 **CCDF**
 ![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/da837570-4305-4c38-bb79-64794d82d689)
 
@@ -23,7 +24,9 @@ LoParms =
            flag_LoQuad: 'IQ'
 
  LoParms.phsNzFreqOffsetHz = [100000, 200000, 400000, 600000, 800000, 1200000, 1800000, 6000000, 10000000]
-```          
+```
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/c98989e3-5443-4850-af51-3b22b79ccb52)
+         
 - mixer parameters
 ```js
 mixParms = 
@@ -38,10 +41,10 @@ mixParms =
     flag_UDconvert_FreqSelect: 'H'
                  flag_MixType: 'IQ'
              flag_IQimbalance: 1
-                    imb_AmpDB: -1
-                   imb_PhsDeg: 1.5
+                    imb_AmpDB: -0.5
+                   imb_PhsDeg: 1
              flag_IQLvlOffset: 1
-              imb_LvlOffsetDB: 3.1
+              imb_LvlOffsetDB: 0.5
                      flag_Amp: 1
               ampIn_op1dB_dBm: 35
                ampIn_oip3_dBm: 5
@@ -51,8 +54,8 @@ mixParms =
                     flag_Amp2: 0
                 mixerOut_flat: []
                flag_LoLeakage: 1
-                    Lo2IF_dBc: 30
-                    Lo2RF_dBc: 30
+                    Lo2IF_dBc: 60
+                    Lo2RF_dBc: 60
                          fNCO: 0
               flag_IQimb_comp: 0
                imb_AmpDB_comp: 0
@@ -61,19 +64,23 @@ mixParms =
 ```
 
 **Waveform Upconversion**
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/1b1a576c-c4c0-45b9-a85c-607ea8012522)
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/6b86ca9e-d931-4960-a48e-cf5dcc1266bd)
+
 
 **Receiver Waveform Demodulation EVM Result**
-- TM3.1
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/930d7343-b456-468d-a84a-4c42b4b9423f)
-- TM1.1
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/5c8f3150-acd6-488b-93f1-6ad6c0f9049e)
+- TM3.1      
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/ca44ed66-f1e0-4932-9552-78059dd6f2a3)
+
+- TM1.1        
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/755be181-d4ee-406b-a273-12c9eebabd57)
+
 
 **Receiver Waveform Demodulation Constellation Result**
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/ae307ac8-eaab-4b2d-9587-815f6f74dc30)
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/fbe77a5f-0488-44ac-8d99-780ee4ae33ab)
 
 **Receiver Waveform CCDF Result**
-![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/3900bb03-9c3b-4ebf-9690-5c4e0d81de70)
+![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/9d22b66e-1867-4768-a089-61806bfb20e9)
+
 
 
 
