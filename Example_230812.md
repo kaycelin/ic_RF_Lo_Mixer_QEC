@@ -1,4 +1,4 @@
-## 2023-08-12, Example of evm comparsion between TM1.1 and TM3.1 
+## 2023-08-12, Example of evm comparsion between TM1.1(QPSK) and TM3.1(64QAM) 
 **Waveform: 100MHz scs:30kHz sampleRate:983.04MHz**
 ![image](https://github.com/kaycelin/ica_RF_Lo_Mixer_QEC/assets/87049112/e2fa3b33-c53a-464b-af4c-7a358811c378)
 
